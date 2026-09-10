@@ -19,6 +19,7 @@
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
       <a href="#about">About Mandy</a>
+      <a href="#areas">Areas</a>
       <a href="#lessons">Lessons</a>
       <a href="#prices">Prices</a>
       <a href="#faq">FAQs</a>
@@ -46,7 +47,7 @@
         <img src="assets/tuition-car.jpg" alt="Pass With Mandy automatic tuition car near the Tyne Bridge">
         <div class="availability-card">
           <span class="pulse" aria-hidden="true"></span>
-          <div><strong>Now taking enquiries</strong><small>Ask about current availability</small></div>
+          <div><strong id="availability-label">Currently booking for November 2026</strong><small>Updated by Mandy</small></div>
         </div>
       </div>
     </section>
@@ -54,8 +55,27 @@
     <section class="area-strip" aria-label="Areas covered">
       <span>Areas covered</span>
       <strong>Newcastle East End</strong>
-      <strong>Wallsend</strong>
-      <strong>North Shields</strong>
+      <strong>All of North Tyneside</strong>
+    </section>
+
+    <section class="areas section" id="areas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Areas covered</p>
+          <h2>Local automatic lessons</h2>
+        </div>
+        <p>Pick-up is available across Newcastle East End and throughout North Tyneside.</p>
+      </div>
+      <div class="area-groups">
+        <article>
+          <h3>Newcastle East End</h3>
+          <p>Byker, Heaton, High Heaton, Walker, Walkergate, Ouseburn and St Anthony’s.</p>
+        </article>
+        <article>
+          <h3>North Tyneside</h3>
+          <p>Wallsend, Howdon, Willington Quay, Hadrian Park, High Farm, Battle Hill, North Shields, Meadow Well, Percy Main, Chirton, Preston, Tynemouth, Cullercoats, Whitley Bay, Monkseaton, West Monkseaton, Marden, Earsdon, Shiremoor, Backworth, West Allotment, Benton, Longbenton, Forest Hall, Killingworth, Palmersville, Holystone, West Moor, Wideopen, Seaton Burn, Dudley, Annitsford, Burradon, Camperdown, Fordley and New York.</p>
+        </article>
+      </div>
     </section>
 
     <section class="about section" id="about">
@@ -200,9 +220,53 @@
         <label for="area">Your area</label>
         <select id="area" name="area" required>
           <option value="">Choose your area</option>
-          <option>Newcastle East End</option>
-          <option>Wallsend</option>
-          <option>North Shields</option>
+          <optgroup label="Newcastle East End">
+            <option>Byker</option>
+            <option>Heaton</option>
+            <option>High Heaton</option>
+            <option>Walker</option>
+            <option>Walkergate</option>
+            <option>Ouseburn</option>
+            <option>St Anthony’s</option>
+          </optgroup>
+          <optgroup label="North Tyneside">
+            <option>Wallsend</option>
+            <option>Howdon</option>
+            <option>Willington Quay</option>
+            <option>Hadrian Park</option>
+            <option>High Farm</option>
+            <option>Battle Hill</option>
+            <option>North Shields</option>
+            <option>Meadow Well</option>
+            <option>Percy Main</option>
+            <option>Chirton</option>
+            <option>Preston</option>
+            <option>Tynemouth</option>
+            <option>Cullercoats</option>
+            <option>Whitley Bay</option>
+            <option>Monkseaton</option>
+            <option>West Monkseaton</option>
+            <option>Marden</option>
+            <option>Earsdon</option>
+            <option>Shiremoor</option>
+            <option>Backworth</option>
+            <option>West Allotment</option>
+            <option>Benton</option>
+            <option>Longbenton</option>
+            <option>Forest Hall</option>
+            <option>Killingworth</option>
+            <option>Palmersville</option>
+            <option>Holystone</option>
+            <option>West Moor</option>
+            <option>Wideopen</option>
+            <option>Seaton Burn</option>
+            <option>Dudley</option>
+            <option>Annitsford</option>
+            <option>Burradon</option>
+            <option>Camperdown</option>
+            <option>Fordley</option>
+            <option>New York</option>
+          </optgroup>
         </select>
         <label for="experience">Driving experience</label>
         <select id="experience" name="experience" required>
@@ -223,7 +287,7 @@
       <span class="brand-mark">M</span>
       <span><strong>Pass With Mandy</strong><small>Automatic driving tuition</small></span>
     </div>
-    <p>Newcastle East End · Wallsend · North Shields</p>
+    <p>Newcastle East End · All of North Tyneside</p>
     <p>© <span id="year"></span> Mandy Dunn Driving School</p>
   </footer>
 

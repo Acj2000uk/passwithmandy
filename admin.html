@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin | Pass With Mandy</title>
+  <meta name="theme-color" content="#071a3b">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <a class="brand admin-brand" href="/">
+      <span class="brand-mark">M</span>
+      <span><strong>Pass With Mandy</strong><small>Website admin</small></span>
+    </a>
+
+    <section class="admin-card" id="login-panel">
+      <p class="eyebrow">Secure access</p>
+      <h1>Admin login</h1>
+      <p>Enter Mandy’s password to update the public booking month.</p>
+      <form id="login-form" class="admin-form">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button class="button button-primary" type="submit">Sign in</button>
+        <p class="admin-message" id="login-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="admin-card" id="editor-panel" hidden>
+      <div class="admin-heading">
+        <div>
+          <p class="eyebrow">Availability</p>
+          <h1>Update booking month</h1>
+        </div>
+        <button class="text-button" id="logout-button" type="button">Sign out</button>
+      </div>
+      <p class="current-status">Website currently shows: <strong id="current-value">November 2026</strong></p>
+      <form id="availability-form" class="admin-form">
+        <label for="month">Booking month</label>
+        <select id="month" name="month" required>
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option selected>November</option>
+          <option>December</option>
+        </select>
+        <label for="booking-year">Booking year</label>
+        <select id="booking-year" name="year" required></select>
+        <button class="button button-primary" type="submit">Save availability</button>
+        <p class="admin-message" id="save-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

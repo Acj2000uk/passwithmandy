@@ -15,6 +15,27 @@ nav.querySelectorAll('a').forEach((link) => {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+async function loadAvailability() {
+  const label = document.querySelector('#availability-label');
+  if (!label) return;
+
+  try {
+    const response = await fetch('/api/availability', {
+      headers: { Accept: 'application/json' },
+      cache: 'no-store'
+    });
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data.month && data.year) {
+      label.textContent = `Currently booking for ${data.month} ${data.year}`;
+    }
+  } catch {
+    // Keep the published fallback when the service is unavailable.
+  }
+}
+
+loadAvailability();
+
 document.querySelector('#enquiry-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);

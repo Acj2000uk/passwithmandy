@@ -65,6 +65,11 @@ h3 { font-size: 1.35rem; }
 .area-strip span { color: #95b9ec; font-size: .73rem; font-weight: 850; text-transform: uppercase; letter-spacing: .13em; }
 .area-strip strong { font-size: .95rem; }
 .section { padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 6vw, 7rem); }
+.areas { background: var(--white); }
+.area-groups { display: grid; grid-template-columns: .7fr 1.3fr; gap: 1rem; }
+.area-groups article { padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid var(--line); border-radius: 1.25rem; background: #f9fbfe; }
+.area-groups h3 { margin-bottom: .85rem; }
+.area-groups p { margin: 0; color: var(--muted); }
 .about { display: grid; grid-template-columns: minmax(18rem, .75fr) minmax(0, 1.25fr); gap: clamp(3rem, 8vw, 8rem); align-items: center; }
 .portrait-wrap { position: relative; max-width: 34rem; }
 .portrait-wrap img { width: 100%; aspect-ratio: .83 / 1; object-fit: cover; object-position: 50% 25%; border-radius: var(--radius); box-shadow: var(--shadow); }
@@ -143,7 +148,7 @@ form .button { width: 100%; margin-top: .5rem; }
   .hero-image-wrap img { aspect-ratio: 1.25 / 1; }
   .availability-card { left: 1rem; }
   .area-strip { flex-wrap: wrap; }
-  .about, .faq, .book { grid-template-columns: 1fr; }
+  .about, .faq, .book, .area-groups { grid-template-columns: 1fr; }
   .portrait-wrap { width: min(90%, 30rem); }
   .section-heading { grid-template-columns: 1fr; gap: 1rem; }
   .lesson-cards, .review-grid, .price-grid { grid-template-columns: 1fr; }
