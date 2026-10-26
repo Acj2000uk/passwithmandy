@@ -7,6 +7,6 @@
     "build": "node -e \"console.log('Pass With Mandy is ready for Netlify')\""
   },
   "dependencies": {
-    "@netlify/blobs": "11.0.3"
+    "@netlify/blobs": "11.1.6"
   }
 }
